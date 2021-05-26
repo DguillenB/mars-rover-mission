@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mars Rover Mission</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">       
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="stylesheet" href="./css/custom.css">        
+        <script type="text/javascript" src="./js/jquery-3.6.0.min"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+        <script type="text/javascript" src="./js/rover.js"></script>
+    </head>
+    <body>
+        <div>
+            <div>
+                <div class="mars-map">
+                    <div id="planet-square">
+                        <h1>Mars Rover Mission</h1>
+                        <div class="empty-table"></div>                     
+                        <table class="table">
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="earth-control">
+                    <div class="section-control">
+                        <h3>Initial starting point</h3>
+                        <div class="form-group">
+                            <label for="x-position">X:</label>
+                            <input id="x-position" type="number" max="199" min="0" title="Position X"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="y-position">Y:</label>
+                            <input id="y-position" type="number" max="199" min="0" title="Position Y"/>
+                        </div>
+                        <input type="button" onclick="newMission()" value="Start Mission" />
+                    </div>
+                    <div class="section-control section-command">
+                        <h3>Send commands</h3>
+                        <div class="form-group">
+                            <input id="command" type="text" maxlength="9" title="Enter the command order" placeholder="(E.g.) FFRRFFFRL" onkeyup="validateCommand(this.value);"/>
+                        </div>
+                        <input id="btnCommand" type="button" onclick="processCommand()" value="Submit Command" />
+                    </div>
+                    <div class="section-control section-debug">
+                        <h3>Debug mode</h3>
+                        <div class="form-group">
+                            <label for="debug"> Enable</label>
+                            <input id="debug" type="checkbox"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

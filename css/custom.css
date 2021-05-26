@@ -1,0 +1,84 @@
+#planet-square{
+    width: 600px;
+    height: 542px;
+    margin: auto;
+    user-select: none;
+}
+#planet-square h1{
+    text-align: center;
+    font-size: 1.2em;
+}
+#planet-square > div:nth-child(1){
+    margin-top: 0px;
+}
+.y-row{
+    display: inline-block;
+    width: 100%;
+}
+.x-cell{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid black;
+    background-color: #c67c61;    
+}
+.mars-map{
+    float: left;
+    width: 60%;
+}
+.rover{
+    background-image: url('../images/rover-icon2.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    width: 26px;
+    height: 100%;
+    margin: auto;
+}
+.stone{
+    background-image: url('../images/stone.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    width: 26px;
+    height: 100%;
+    margin: auto;
+}
+.earth-control{
+    float: right;
+    width: 35%;
+    padding-top: 1em;
+}
+.earth-control input[type=number]{
+    width: 100px;
+}
+.earth-control input[type=button]{
+    width: 130px;
+    background-color: #0e75df;
+    color: white;
+    font-weight: 500;
+}
+.section-control{
+    padding: 25px;
+}
+.section-command input{
+    width: 122px;
+}
+.empty-table{
+    width: 570px;
+    height: 570px;
+    background-color: #d6d0d0;    
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.section-command,
+.section-debug{
+    display: none;
+}
+.debug-disabled{
+    display: none;
+}
+.debug-enable{
+    font-size: 6px;
+    display: block;
+    position: absolute;
+}
